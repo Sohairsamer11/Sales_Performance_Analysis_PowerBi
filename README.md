@@ -1,33 +1,33 @@
+
 # 📊 Sales Performance Analysis Report | Power BI
 
-An end-to-end sales analytics project using Power BI to analyze sales performance, profitability, product trends, discounts, geographic performance, costs, and sales forecasting. The project transforms sales data into an interactive **8-page dashboard** to support data-driven business decisions.
+An end-to-end sales analytics project built with **Power BI** to analyze sales performance, profitability, product trends, discounts, geographic performance, costs, and sales forecasting.
+
+The project transforms raw sales data into an interactive **8-page dashboard** to support data-driven business decisions.
+
+---
 
 ## 📌 Project Overview
 
 This project explores sales performance and profitability across products, categories, and markets. It analyzes **4,116 orders, 1,810 products, 17 sub-categories, and 3 product categories** to answer key business questions:
 
 - How much revenue and profit does the business generate?
-- Which products and categories contribute most to sales and profitability?
-- How do discounts relate to sales and profit?
-- Which countries and cities perform best or generate losses?
-- How do costs vary across product categories?
+- Which product categories and sub-categories perform best?
+- How do sales and profits change over time?
+- How do discounts affect profitability?
+- Which countries generate the highest sales?
+- What are the main cost and quantity trends?
 - What do historical sales trends suggest about future performance?
-🎯 Objectives
 
-Build an interactive Power BI report for business users.
+## 🎯 Objectives
 
-Track key performance indicators (KPIs), including sales, profit, quantity, cost, and average order value.
-
-Compare performance across categories, sub-categories, and products.
-
-Analyze sales trends and seasonality over time.
-
-Investigate discount patterns and profitability.
-
-Explore geographic performance and cost structure.
-
-Use sales forecasting visuals to examine potential future trends.
-
+- Build an interactive Power BI report for business users.
+- Track key performance indicators (KPIs), including sales, profit, quantity, cost, and average order value.
+- Compare performance across product categories, sub-categories, and geographic markets.
+- Analyze sales trends over time.
+- Explore the relationship between discounts and profitability.
+- Present findings through clear, interactive visualizations.
+- Use historical sales data to explore potential future trends.
 
 ## 📂 Repository Structure
 
@@ -47,140 +47,126 @@ Sales_Performance_Analysis_PowerBi/
 └── README.md
 ```
 
-
-
 ## 📑 Report Pages
 
-The report includes eight pages, each focusing on a different aspect of business performance.
-
-| # | Report Page | Analysis |
+| Page | Analysis | Focus |
 |---|---|---|
-| 1 | Descriptive Statistics | Orders, products, categories, sales, quantity, cost, profit, and category contributions |
-| 2 | Time-Series Analysis | Sales and profit trends, monthly seasonality, and yearly sales growth |
-| 3 | Product & Category Analysis | Top products by sales and profit, category trends, and product-level comparisons |
-| 4 | Discount & Profitability Analysis | Discount distribution, sales and profit patterns, and category profitability |
-| 5 | Orders & Quantity Analysis | Quantity by category and sub-category, order value distribution, and order-size analysis |
-| 6 | Geographic Analysis | Sales and profit by country, including stronger and weaker markets |
-| 7 | Cost Analysis | Cost of goods sold (COGS) compared with profit, with category and sub-category analysis |
-| 8 | Forecasting | Sales forecast by month and quarter, alongside actual sales by category |
+| 1 | Descriptive Statistics | Overview of key performance indicators and descriptive statistics |
+| 2 | Time-Series Analysis | Sales trends and changes over time |
+| 3 | Product & Category Analysis | Performance by product, category, and sub-category |
+| 4 | Discount & Profitability Analysis | Discount patterns and their relationship with profit |
+| 5 | Orders & Quantity Analysis | Order volume and quantity trends |
+| 6 | Geographic Sales Analysis | Sales performance across geographic markets |
+| 7 | Cost Analysis | Cost patterns and comparisons |
+| 8 | Forecasting | Historical sales patterns and potential future trends |
 
-🔍 Key Findings
+## 🔍 Key Findings
 
-Overall performance: 4,116 orders generated approximately $2.35M in sales and $283K in profit, with an overall profit margin of about 12%.
+- **Overall sales:** Approximately $2.35 million.
+- **Total profit:** Approximately $283.16K.
+- **Total cost:** Approximately $2.06 million.
+- **Total quantity sold:** 30,337 units.
+- **Total orders:** 4,116.
+- **Product portfolio:** 1,810 products across 17 sub-categories and 3 categories.
 
-Furniture is the weakest category: It generated approximately $52K in profit on $650K in sales, equivalent to an estimated 8% profit margin.
+### Category Performance
 
-Office Supplies: Generated approximately $125K in profit on $823K in sales, equivalent to an estimated 15% profit margin. It contributed the largest share of total profit among the three categories.
+- **Furniture:** Approximately $650K in sales, with a profit of $52K and a profit margin of around 8%.
+- **Office Supplies:** Approximately $823K in sales, with a profit of $125K and a profit margin of around 15%.
+- **Technology:** Approximately $874K in sales, with a profit of $106K and a profit margin of around 12%.
 
-Technology leads in sales: It generated approximately $874K in sales, representing about 37% of total sales, while Office Supplies contributed the largest share of profit.
+### Additional Observations
 
-Sales trends: Sales increased from approximately $407K in 2011 to $756K in 2014, an increase of about 86%. The report also explores monthly seasonality.
+- Office Supplies accounts for the largest share of units sold, with approximately 19,888 units.
+- Technology generated approximately $874K in sales.
+- Furniture has a lower profit margin than the other two categories, making its profitability worth further investigation.
+- Discount analysis can help identify whether higher discounts are associated with lower profitability.
+- Geographic analysis helps compare sales performance across markets.
 
-Sales volume: Office Supplies accounted for the largest reported quantity sold, at approximately 19,888 units.
-
-Geographic performance: The report compares sales and profitability across countries to identify strong markets and locations with negative profit.
-
-Cost structure: Total reported cost was approximately $2.06M, with Technology carrying the highest cost and Furniture the lowest among the three categories.
-
-Note: Figures are rounded. The 2015 period appears to contain substantially less sales data than earlier years, so comparisons and forecasts involving that period should be interpreted cautiously. Verify final figures against the Power BI report before publication.
-
+*Note: Figures are based on the project's reported dashboard values and may be affected by the underlying dataset and its coverage.*
 
 ## 🗃️ Dataset
 
-The source Excel workbook contains multiple related tables used for sales analysis and data modeling.
+The project uses the provided Excel workbook:
 
-| Table | Purpose |
-|---|---|
-| Order Details | Sales, profit, quantity, discount, and product/category keys |
-| Orders | Order information, customer and geographic keys, shipping mode, and dates |
-| Product | Product information and product keys |
-| Customer | Customer information and customer keys |
-| Category | Product category lookup |
-| Sub-Category | Product sub-category lookup |
-| Country | Country lookup |
-| City | City lookup |
-| Ship Mode | Shipping mode lookup |
+`Power BI - Sales Project Data - Un-cleaned.xlsx`
 
-These tables support the analysis by connecting sales transactions with product, customer, category, and geographic information.
+The workbook contains the following data tables or sheets:
 
+- Order Details
+- Orders
+- Sub-Category
+- Ship Mode
+- Product
+- Customer
+- Country
+- City
+- Category
 
-🛠️ Tech Stack
+The data supports analysis of orders, products, customers, sales, quantities, costs, discounts, profits, and geographic performance.
 
-Power BI Desktop: Data modeling, interactive visualizations, slicers, and forecasting.
+## 🛠️ Tech Stack
 
-DAX: KPI calculations, profitability metrics, and growth measures.
+- **Power BI Desktop:** Report development and data visualization.
+- **DAX:** Measures and KPI calculations.
+- **Power Query:** Data cleaning and transformation.
+- **Microsoft Excel:** Source data and data inspection.
+- **Data Modeling:** Organizing relationships between data tables.
+- **Time-Series Analysis:** Exploring historical sales trends.
+- **Forecasting:** Examining potential future sales patterns.
 
-Microsoft Excel: Source data and supporting tables.
+## 🚀 How to Use
 
-🚀 How to Use
+1. Download or clone this repository.
+2. Open `Sohair Samer Yehia PowerBi Project.pbix` using Power BI Desktop.
+3. If Power BI requests the source data location, reconnect it to `Power BI - Sales Project Data - Un-cleaned.xlsx`.
+4. Refresh the data if needed.
+5. Navigate through the eight report pages to explore the analysis.
+6. Refer to the `images/` folder to preview the dashboard pages.
 
-Download or clone this repository.
+## ⚠️ Limitations & Next Steps
 
-Open Sohair Samer Yehia PowerBi Project.pbix using Power BI Desktop.
+- **Data coverage:** The completeness of the 2015 data should be checked before drawing conclusions about year-over-year performance.
+- **Discount analysis:** Further investigation may be needed to distinguish the effects of discounts from other factors influencing profitability.
+- **Forecast uncertainty:** Forecasts are estimates based on historical patterns and should not be treated as guaranteed future outcomes.
+- **Potential extensions:**
+  - Customer segmentation and purchasing behavior analysis.
+  - More detailed profitability analysis by product and market.
+  - Additional sales and operational KPIs.
+  - Forecast accuracy evaluation using a separate validation period.
+  - Automated data refresh and reporting.
 
-If prompted, verify or update the source data path.
+## 🖼️ Dashboard Screenshots
 
-Refresh the data if required.
-
-Explore the report pages and use the available filters to investigate sales and profitability.
-
-⚠️ Limitations & Next Steps
-
-Potentially incomplete 2015 data: Reported sales for 2015 are much lower than in previous years. The underlying date coverage should be checked before drawing conclusions about annual growth or forecasts.
-
-Discount analysis: Conclusions about discount effects should be interpreted in light of the number and distribution of discounted transactions.
-
-Forecast uncertainty: Forecasts are estimates based on historical patterns and should not be treated as guaranteed future results.
-
-Potential extensions:
-
-Customer segmentation using RFM analysis.
-
-Deeper analysis of profit drivers at the sub-category level.
-
-What-if analysis to evaluate alternative discount strategies.
-
-Additional validation of data quality and time coverage.
-
-🖼️ Dashboard Screenshots
-
-1. Descriptive Statistics
-
+### 1. Descriptive Statistics
 
 ![Descriptive Statistics](images/01-descriptive-statistics.PNG)
 
-
-2. Time-Series Analysis
+### 2. Time-Series Analysis
 
 ![Time-Series Analysis](images/02-time-series-analysis.PNG)
 
+### 3. Product & Category Analysis
 
-3. Product & Category Analysis
+![Product & Category Analysis](images/03-product-category-analysis.PNG)
 
-![Product and Category Analysis](images/03-product-category-analysis.PNG)
+### 4. Discount & Profitability Analysis
 
+![Discount & Profitability Analysis](images/04-discount-profitability.PNG)
 
-4. Discount & Profitability Analysis
+### 5. Orders & Quantity Analysis
 
-![Discount & Profitability](images/04-discount-profitability.PNG)
+![Orders & Quantity Analysis](images/05-orders-quantity.PNG)
 
+### 6. Geographic Sales Analysis
 
-5. Orders & Quantity Analysis
+![Geographic Sales Analysis](images/06-geographic-analysis.PNG)
 
-![Orders & Quantity](images/05-orders-quantity.PNG)
+### 7. Cost Analysis
 
-
-6. Geographic Analysis
-
-![Geographic Analysis](images/06-geographic-analysis.PNG)
-
-
-7. Cost Analysis
 ![Cost Analysis](images/07-cost-analysis.PNG)
 
-
-
-8. Forecasting
+### 8. Forecasting
 
 ![Forecasting](images/08-forecasting.PNG)
 
@@ -190,4 +176,3 @@ Additional validation of data quality and time coverage.
 
 - [LinkedIn](https://www.linkedin.com/in/sohair-samer)
 - [GitHub](https://github.com/Sohairsamer11)
-
